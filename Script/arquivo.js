@@ -1,7 +1,7 @@
 var cidade, chaveAPI;
 function obterPrevisaoTempo() {
     cidade = document.getElementById('input-cidade').value;
-    chaveAPI = '3b9735245c5f3f58daf6c4139a511c1e';
+    chaveAPI = 'SecretToken';
     document.querySelector(".titulo-app").innerHTML = `Previsão do tempo - ${cidade}`;
     var url = `http://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${chaveAPI}&units=metric`;
   
